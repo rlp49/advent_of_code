@@ -1,4 +1,4 @@
-with open("input/4_input.txt") as f:
+with open("../input/4.txt") as f:
     data = f.readlines()
 
     containedPairs = 0

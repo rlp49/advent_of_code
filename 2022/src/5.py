@@ -1,6 +1,6 @@
 from copy import deepcopy
 
-with open("input/5_input.txt") as f:
+with open("../input/5.txt") as f:
     data = f.readlines()
     
     initial_state = [
@@ -34,8 +34,6 @@ with open("input/5_input.txt") as f:
     print(f"part 1 {ans=}")
 
     state = deepcopy(initial_state)
-
-    print(state)
 
     for line in data:
         split = line.split(" ")
