@@ -43,5 +43,12 @@ with open("../input/7.txt") as f:
  
     print(f"part 1 {ans=}")
 
+    diskSize = 70000000
+    needToFree = dSize["/."] - 40000000
 
-    # print(f"part 2 ans={b}")
+    ans = 999999999999
+    for v in dSize.values():
+        if v >= needToFree:
+            ans = min(ans, v)
+
+    print(f"part 2 {ans=}")
